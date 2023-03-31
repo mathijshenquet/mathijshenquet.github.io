@@ -1,0 +1,47 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+%\usepackage[text={6in,9in},centering]{geometry}
+\usepackage[scale=0.8]{geometry} % Reduce document margins
+
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\definecolor{color1}{rgb}{0.22,0.46,0.34}
+\usepackage[nodayofweek]{datetime}
+\newcommand{\mydate}{\formatdate{4}{1}{2018}} 
+\usepackage[bottom]{footmisc}
+
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \moderncvhead{3}
+
+
+% \usepackage[bottom]{footmisc}
+% \moderncvhead{3}
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage[ngerman]{babel}
+% adjust the page margins
+%\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\moderncvcolor{color1}
+% personal data
+
+\include{CV}

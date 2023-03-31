@@ -1,0 +1,125 @@
+{
+    "layout": [
+        "info",
+        "skills",
+        "education",
+        "experience"
+    ],
+    "info": {
+        "name": "Mathijs Henquet",
+        "birth": "Born 7 januari 1994",
+        "email": "mathijs.henquet@gmail.com",
+        "address": [
+            "Donker Curitusstraat 3 C33",
+            "1051 JL Amsterdam",
+            "The Netherlands"
+        ],
+        "socials": [
+            "github:mathijshenquet",
+            "linkedin:mathijs-henquet-449577b"
+        ],
+        "phone": "+31 (0)6 39 56 53 54"
+    },
+    "skills": {
+        "technical": {
+            "advanced": [
+                "Rust",
+                "C# (.NET Core)",
+                "Javascript (Typescript, React)",
+                "Haskell",
+                "Git",
+                "Mathematica",
+                "Latex"
+            ],
+            "intermediate": [
+                "Powershell",
+                "Linux",
+                "Java",
+                "PHP (Symfony, Doctrine)",
+                "SQL (MySQL, Oracle)",
+                "Docker"
+            ]
+        },
+        "language": [
+            {
+                "language": "Dutch",
+                "level": "C2 - Native"
+            },
+            {
+                "language": "English",
+                "level": "C2 - Near native"
+            },
+            {
+                "language": "German",
+                "level": "C1 - Excellent"
+            }
+        ]
+    },
+    "education": [
+        {
+            "time": "2006 - 2012",
+            "item": "Secondary education at De Nieuwste School, Tilburg",
+            "grade": "Grade point average 8.5"
+        },
+        {
+            "time": "2012 - 2019",
+            "item": "Bachelor of Mathematics at Utrecht University",
+            "grade": "Grade point average 7.8"
+        },
+        {
+            "time": "2016 - 2017",
+            "item": "Erasmus semester at Freiburg University, Germany"
+        },
+        {
+            "time": "2015 - 2019",
+            "item": "Bachelor Informatics at Utrecht University",
+            "grade": "Grade point average 7.8"
+        },
+        {
+            "time": "2020 - present",
+            "item": "Master Mathematics at Utrecht University",
+            "grade": "Ongoing"
+        }
+    ],
+    "projects": [
+        {
+            "time": "2016",
+            "item": "Winner of μKP programming competition",
+            "description": "A programming competition amongst the CS students at Utrecht University."
+        },
+        {
+            "time": "2018",
+            "item": "Bachelor Thesis Homotopical mathematics",
+            "description": "On homotopy type theory and its relation to higher topos theory.",
+            "link": "file:%CV%/henquet_homotopical_mathematics.pdf"
+        },
+        {
+            "time": "2018",
+            "item": "Software project Speech2EPD",
+            "description": 
+            "The goal was a system which produces a multimodal electronic medical file by collecting various inputs such as recorded consults and digital measurements. For this I designed and built a flexible microservices based architecture backbone of this system. "
+        },
+        {
+            "time": "2019",
+            "item": "Summer fellow at MIRI",
+            "description": "An extended retreat by the Machine Intelligence Research Institution for mathematicians and programmers with a serious interest in making technical progress on the problem of AI alignment."
+        },
+        {
+            "time": "2022-present",
+            "item": "Master thesis project",
+            "description": "On the correctness of automatic differentiation in the presence of recursion and iteration. "
+        }
+    ],
+    "experience": [
+        {
+            "time": "2015",
+            "item": "Tutor Linear Algebra at Utrecht University"
+        },
+        {
+            "time": "2020",
+            "item": "Volunteer at Epidemic Forecasting",
+            "link": "github:https://github.com/epidemics/covid",
+            "description": "Supporting decision makers with Covid19 scenarios and modeling, geared toward the global south. I worked on presenting the models in the frontend. "
+        }
+    ]
+}
