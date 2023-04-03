@@ -113,12 +113,9 @@ async function toLatex() {
 
     let html_info: Array<string> = [];
     function info(thing: string, icon: string | null, value: string){
-        let opt = icon ? [icon] : [];
-        latex_cmd(thing, opt, value);
+        latex_cmd(thing, icon ? [icon] : [], value);
 
-        if(icon){
-            value = `<i class="fas fa-${icon}"></i> ${value}`;
-        }
+        value = `<i class="fas fa-${icon ?? thing}"></i> ${value}`;
         html_info.push(`<li class="info-${thing}">${value}</li>`);
     }
 
@@ -134,7 +131,7 @@ async function toLatex() {
     //cmd('address', [], cv.info.address);
 
     info('phone', "mobile", cv.info.phone);
-    info('email', "email", cv.info.email);
+    info('email', null, cv.info.email);
     cv.info.socials.forEach((social) => {
         let [platform, handle] = social.split(":");
         info('social', platform, handle);
@@ -167,6 +164,7 @@ async function toLatex() {
     section("Technical skills")
     cvitem("Advanced", _skills(cv.skills.technical.advanced));
     cvitem("Intermediate", _skills(cv.skills.technical.intermediate))
+    cvitem("Basic", "\\textit{\\small Many more...}")
 
     section("Education");
     cv.education.forEach(({ time, item, grade }) => {

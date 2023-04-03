@@ -90,7 +90,7 @@
             "item": "Software project Speech2EPD",
             "link": "file:%CV%/kieli_software_project.pdf",
             "description": 
-            "The goal was a system which produces a multimodal electronic medical file by collecting various inputs such as recorded consults and digital measurements. For this I designed and built a flexible microservices based architecture backbone of this system. "
+            "We made a system which produces a electronic medical file by collecting multimodal inputs such as recorded consults and digital measurements. For this I designed and implemented a flexible microservices based architecture which served as the backbone of this system. "
         },
         {
             "time": "2019",
@@ -107,6 +107,7 @@
         {
             "time": "2022-present",
             "item": "Master thesis project",
+            "grade": "Ongoing",
             "description": "On the correctness of automatic differentiation in the presence of recursion and iteration. "
         }
     ],
