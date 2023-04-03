@@ -19,21 +19,22 @@
             "advanced": [
                 "Rust",
                 "C# (.NET Core)",
-                "Javascript (Typescript, React, Node.js)",
+                "Javascript (Typescript, Node.js)",
+                "React",
+                "Web (HTML, CSS)",
                 "Haskell",
-                "Git",
                 "Mathematica",
-                "Latex",
-                "Web (HTML, CSS)"
+                "Latex"
             ],
             "intermediate": [
-                "Powershell",
-                "Linux",
+                "Git",
                 "Java",
                 "PHP (Symfony, Doctrine)",
                 "SQL (MySQL, PostgreSQL, Oracle)",
                 "NoSQL (MongoDB, Redis)",
                 "Docker",
+                "Linux",
+                "Powershell",
                 "Bash"
             ],
             "basic": "many more"
@@ -60,13 +61,13 @@
             "grade": "Grade point average 8.5"
         },
         {
+            "time": "2016 - 2017",
+            "item": "Erasmus semester at Freiburg University, Germany"
+        },
+        {
             "time": "2012 - 2019",
             "item": "Bachelor of Mathematics at Utrecht University",
             "grade": "Grade point average 7.8"
-        },
-        {
-            "time": "2016 - 2017",
-            "item": "Erasmus semester at Freiburg University, Germany"
         },
         {
             "time": "2015 - 2019",

@@ -167,14 +167,14 @@ async function toLatex() {
     cvitem("Basic", "\\textit{\\small Many more...}")
 
     section("Education");
-    cv.education.forEach(({ time, item, grade }) => {
+    cv.education.reverse().forEach(({ time, item, grade }) => {
         let groups = /(?<title>.*) at (?<inst>.+?)(?:\, (?<loc>.*))?$/s.exec(item)?.groups ?? {};
         cventry(time, groups.title, groups.inst, groups.loc ?? "", grade ?? "")
     })
 
 
     section("Projects and awards")
-    cv.projects.forEach((project) => {
+    cv.projects.reverse().forEach((project) => {
         let {time, item, description} = project;
         if(project.link){
             item = _link(project.link, item)
@@ -184,7 +184,7 @@ async function toLatex() {
 
 
     section("Experience");
-    cv.experience.forEach((project) => {
+    cv.experience.reverse().forEach((project) => {
         let {time, item, description} = project;
         if(project.link){
             item = _link(project.link, item)
