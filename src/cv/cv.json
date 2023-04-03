@@ -1,10 +1,4 @@
 {
-    "layout": [
-        "info",
-        "skills",
-        "education",
-        "experience"
-    ],
     "info": {
         "name": "Mathijs Henquet",
         "birth": "Born 7 januari 1994",
@@ -16,7 +10,7 @@
         ],
         "socials": [
             "github:mathijshenquet",
-            "linkedin:mathijs-henquet-449577b"
+            "linkedin:mathijshenquet"
         ],
         "phone": "+31 (0)6 39 56 53 54"
     },
@@ -25,20 +19,24 @@
             "advanced": [
                 "Rust",
                 "C# (.NET Core)",
-                "Javascript (Typescript, React)",
+                "Javascript (Typescript, React, Node.js)",
                 "Haskell",
                 "Git",
                 "Mathematica",
-                "Latex"
+                "Latex",
+                "Web (HTML, CSS)"
             ],
             "intermediate": [
                 "Powershell",
                 "Linux",
                 "Java",
                 "PHP (Symfony, Doctrine)",
-                "SQL (MySQL, Oracle)",
-                "Docker"
-            ]
+                "SQL (MySQL, PostgreSQL, Oracle)",
+                "NoSQL (MongoDB, Redis)",
+                "Docker",
+                "Bash"
+            ],
+            "basic": "many more"
         },
         "language": [
             {
@@ -97,6 +95,7 @@
         {
             "time": "2019",
             "item": "Bachelor Thesis Homotopical mathematics",
+            "grade": "Grade: 9",
             "description": "On homotopy type theory and its relation to higher topos theory.",
             "link": "file:%CV%/henquet_homotopical_mathematics.pdf"
         },

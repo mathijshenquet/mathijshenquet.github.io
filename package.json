@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@types/node": "^18.15.11"
+  },
+  "scripts": {
+    "build": "npx ts-node ./src/cv/index.ts"
+  }
+}

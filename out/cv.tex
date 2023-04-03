@@ -1,0 +1,90 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+%\usepackage[text={6in,9in},centering]{geometry}
+\usepackage[scale=0.8]{geometry} % Reduce document margins
+
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\definecolor{color1}{rgb}{0.22,0.46,0.34}
+\usepackage[nodayofweek]{datetime}
+\newcommand{\mydate}{\formatdate{4}{1}{2018}} 
+\usepackage[bottom]{footmisc}
+
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \moderncvhead{3}
+
+
+% \usepackage[bottom]{footmisc}
+% \moderncvhead{3}
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage[ngerman]{babel}
+% adjust the page margins
+%\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\moderncvcolor{color1}
+% personal data
+
+\name{Mathijs}{Henquet}
+\phone[mobile]{+31 (0)6 39 56 53 54}
+\email[email]{mathijs.henquet@gmail.com}
+\social[github]{mathijshenquet}
+\social[linkedin]{mathijshenquet}
+
+\begin{document}
+\makecvtitle
+\vspace*{-3em}
+
+\section{Technical skills}
+\cvitem{Advanced}{Rust, C\# {\small (.NET Core)}, Javascript {\small (Typescript, React, Node.js)}, Haskell, Git, Mathematica, \LaTeX, Web {\small (HTML, CSS)}}
+\cvitem{Intermediate}{Powershell, Linux, Java, PHP {\small (Symfony, Doctrine)}, SQL {\small (MySQL, PostgreSQL, Oracle)}, NoSQL {\small (MongoDB, Redis)}, Docker, Bash}
+
+\section{Education}
+\cventry{2006 -- 2012}{Secondary education}{De Nieuwste School, Tilburg}{}{Grade point average 8.5}{}
+\cventry{2012 -- 2019}{Bachelor of Mathematics}{Utrecht University}{}{Grade point average 7.8}{}
+\cventry{2016 -- 2017}{Erasmus semester}{Freiburg University, Germany}{}{}{}
+\cventry{2015 -- 2019}{Bachelor Informatics}{Utrecht University}{}{Grade point average 7.8}{}
+\cventry{2020 -- \phantom{2020}}{Master Mathematics}{Utrecht University}{}{Ongoing}{}
+
+\section{Projects and awards}
+\cventry{2016}{\normalfont Winner of $\mu$KP programming competition}{}{}{}{A programming competition amongst the CS students at Utrecht University.}
+\cventry{2018}{\normalfont \href{http://mathijshenquet.nl/cv/kieli_software_project.pdf}{Software project Speech2EPD \textcolor{color2}{\faIcon[regular]{file}}}}{}{}{}{The goal was a system which produces a multimodal electronic medical file by collecting various inputs such as recorded consults and digital measurements. For this I designed and built a flexible microservices based architecture backbone of this system. }
+\cventry{2019}{\normalfont \href{http://mathijshenquet.nl/cv/henquet_homotopical_mathematics.pdf}{Bachelor Thesis Homotopical mathematics \textcolor{color2}{\faIcon[regular]{file}}}}{}{}{Grade: 9}{On homotopy type theory and its relation to higher topos theory.}
+\cventry{2019}{\normalfont Summer fellow at MIRI}{}{}{}{An extended retreat by the Machine Intelligence Research Institution for mathematicians and programmers with a serious interest in making technical progress on the problem of AI alignment.}
+\cventry{2022--\phantom{0}}{\normalfont Master thesis project}{}{}{}{On the correctness of automatic differentiation in the presence of recursion and iteration. }
+
+\section{Experience}
+\cventry{2015}{\normalfont Tutor Linear Algebra at Utrecht University}{}{}{}{}
+\cventry{2020}{\normalfont \href{https://github.com/epidemics/covid}{Volunteer at Epidemic Forecasting \textcolor{color2}{\faIcon[regular]{github}}}}{}{}{}{Supporting decision makers with Covid19 scenarios and modeling, geared toward the global south. I worked on presenting the models in the frontend. }
+
+\section{Language skills}
+\begin{minipage}[t]{0.33\textwidth}
+\cvitem{Dutch}{C2 - Native}
+\end{minipage}
+\begin{minipage}[t]{0.33\textwidth}
+\cvitem{English}{C2 - Near native}
+\end{minipage}
+\begin{minipage}[t]{0.33\textwidth}
+\cvitem{German}{C1 - Excellent}
+\end{minipage}
+
+\end{document}

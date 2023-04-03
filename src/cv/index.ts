@@ -1,5 +1,6 @@
 
 import * as cv from "./cv.json";
+import * as fs from "fs/promises";
 
 let cv_root = "http://mathijshenquet.nl/cv"
 let _link = (target: string, item: string) => {
@@ -17,7 +18,7 @@ let _link = (target: string, item: string) => {
 
 const html_indent = "  ";
 
-function toLatex() {
+async function toLatex() {
 
     let latex: Array<string> = []
     let html: Array<string | number> = []
@@ -80,9 +81,9 @@ function toLatex() {
     }
 
 
-    function simple_entry(time: string, item: string, comment?: string) {
+    function simple_entry(time: string, item: string, grade: string = "", comment: string = "") {
         time = time.replace(/ ?- ?/, "--").replace("present", "\\phantom{0}")
-        latex_cmd("cventry", [], [time, `\\normalfont ${item}`, "", "", "", comment ?? ""])
+        latex_cmd("cventry", [], [time, `\\normalfont ${item}`, "", "", grade ?? "", comment ?? ""])
 
         html_block(
             ...$('div', `class="entry"`, 
@@ -148,12 +149,24 @@ function toLatex() {
         ));
     }
 
+
+    function _language({language, level}: {language: string, level: string}){
+        latex.push('\\begin{minipage}[t]{0.33\\textwidth}')
+        latex_cmd("cvitem", [], [language, level]);
+        latex.push('\\end{minipage}')
+    }
+
+    const _skills = (skills: Array<string>) => skills.map((x) => x.replace(/\((.*)\)/, "{\\small ($1)}")).join(", ");
+
     function footer(){
         latex.push('', `\\end{document}`)
     }
 
     header()
 
+    section("Technical skills")
+    cvitem("Advanced", _skills(cv.skills.technical.advanced));
+    cvitem("Intermediate", _skills(cv.skills.technical.intermediate))
 
     section("Education");
     cv.education.forEach(({ time, item, grade }) => {
@@ -168,7 +181,7 @@ function toLatex() {
         if(project.link){
             item = _link(project.link, item)
         }
-        simple_entry(time, item, description)
+        simple_entry(time, item, project.grade, description)
     })
 
 
@@ -178,27 +191,23 @@ function toLatex() {
         if(project.link){
             item = _link(project.link, item)
         }
-        simple_entry(time, item, description)
+        simple_entry(time, item, "", description)
     })
 
 
     section("Language skills")
-
-    function _language({language, level}: {language: string, level: string}){
-        latex.push('\\begin{minipage}[t]{0.33\\textwidth}')
-        latex_cmd("cvitem", [], [language, level]);
-        latex.push('\\end{minipage}')
-    }
-
     cv.skills.language.forEach(_language);
 
-    const _skills = (skills: Array<string>) => skills.map((x) => x.replace(/\((.*)\)/, "{\\small ($1)}")).join(", ");
-
-    section("Technical skills")
-    cvitem("Advanced", _skills(cv.skills.technical.advanced));
-    cvitem("Intermediate", _skills(cv.skills.technical.intermediate))
-
     footer()
+
+    let out = await fs.open(`out/cv.tex`, "w");
+
+    out.write(await fs.readFile(`${__dirname}/preamble.tex`));
+    for (let line of latex){
+        await out.write(line);
+        await out.write("\n");
+    }
+    await out.close();
 
     let html_lines: Array<string> = [];
     html.reduce<number>((indent, item) => {

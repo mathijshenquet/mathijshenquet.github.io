@@ -1,0 +1,407 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdftex 2023.4.3)  3 APR 2023 11:46
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**src/cv/out/cv.tex
+(./src/cv/out/cv.tex
+! Undefined control sequence.
+l.9 \documentclass
+                  [11pt,a4paper,sans]{moderncv}        % possible options in...
+
+? 
+! Undefined control sequence.
+l.11 \usepackage
+                [scale=0.8]{geometry} % Reduce document margins
+? 
+! Undefined control sequence.
+l.13 \usepackage
+                [english]{babel}
+? 
+! Undefined control sequence.
+l.14 \usepackage
+                {xcolor}
+? 
+! Undefined control sequence.
+l.15 \definecolor
+                 {color1}{rgb}{0.22,0.46,0.34}
+? 
+! Undefined control sequence.
+l.16 \usepackage
+                [nodayofweek]{datetime}
+? 
+! Undefined control sequence.
+l.17 \newcommand
+                {\mydate}{\formatdate{4}{1}{2018}}
+? 
+! Undefined control sequence.
+l.17 \newcommand{\mydate
+                        }{\formatdate{4}{1}{2018}}
+? 
+! Undefined control sequence.
+l.17 \newcommand{\mydate}{\formatdate
+                                     {4}{1}{2018}}
+? 
+! Undefined control sequence.
+l.18 \usepackage
+                [bottom]{footmisc}
+? 
+! Undefined control sequence.
+l.22 \moderncvstyle
+                   {classic}                             % style options are...
+
+? 
+! Undefined control sequence.
+l.23 \moderncvcolor
+                   {red}                               % color options 'blue...
+
+? 
+! Undefined control sequence.
+l.38 \usepackage
+                [utf8]{inputenc}                       % if you are not usin...
+
+? 
+! Undefined control sequence.
+l.47 \name
+          {Mathijs}{Henquet}
+? 
+! Undefined control sequence.
+l.48 \phone
+           [mobile]{+31 (0)6 39 56 53 54}
+? 
+! Undefined control sequence.
+l.49 \email
+           [email]{mathijs.henquet@gmail.com}
+? 
+! Undefined control sequence.
+l.50 \social
+            [github]{mathijshenquet}
+? 
+! Undefined control sequence.
+l.51 \social
+            [linkedin]{mathijs-henquet-449577b}
+? 
+
+Overfull \hbox (0.13495pt too wide) in paragraph at lines 47--52
+[]\tenrm MathijsHenquet [mo-bile]+31 (0)6 39 56 53 54 [email]mathijs.henquet@gm
+ail.com [github]mathijshenquet|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm M
+.\tenrm a
+.\tenrm t
+.\tenrm h
+.etc.
+
+! Undefined control sequence.
+l.53 \begin
+           {document}
+? 
+! Undefined control sequence.
+l.54 \makecvtitle
+                 
+? 
+! Undefined control sequence.
+l.55 \vspace
+            *{-3em}
+? 
+! Undefined control sequence.
+l.57 \section
+             {Technical skills}
+? 
+! Undefined control sequence.
+l.58 \cvitem
+            {Advanced}{Rust, C\# {\small (.NET Core)}, Javascript {\small (T...
+
+? 
+! Undefined control sequence.
+l.58 \cvitem{Advanced}{Rust, C\# {\small
+                                         (.NET Core)}, Javascript {\small (T...
+
+? 
+! Undefined control sequence.
+l.58 ...# {\small (.NET Core)}, Javascript {\small
+                                                   (Typescript, React, Node....
+
+? 
+! Undefined control sequence.
+l.58 ...de.js)}, Haskell, Git, Mathematica, \LaTeX
+                                                  , Web {\small (HTML, CSS)}}
+? 
+! Undefined control sequence.
+l.58 ...ell, Git, Mathematica, \LaTeX, Web {\small
+                                                   (HTML, CSS)}}
+? 
+! Undefined control sequence.
+l.59 \cvitem
+            {Intermediate}{Powershell, Linux, Java, PHP {\small (Symfony, Do...
+
+? 
+! Undefined control sequence.
+l.59 ...iate}{Powershell, Linux, Java, PHP {\small
+                                                   (Symfony, Doctrine)}, SQL...
+
+? 
+! Undefined control sequence.
+l.59 ... {\small (Symfony, Doctrine)}, SQL {\small
+                                                   (MySQL, PostgreSQL, Oracl...
+
+? 
+! Undefined control sequence.
+l.59 ...MySQL, PostgreSQL, Oracle)}, NoSQL {\small
+                                                   (MongoDB, Redis)}, Docker...
+
+? 
+! Undefined control sequence.
+l.61 \section
+             {Education}
+? 
+! Undefined control sequence.
+l.62 \cventry
+             {2006 -- 2012}{Secondary education}{De Nieuwste School, Tilburg...
+
+? 
+! Undefined control sequence.
+l.63 \cventry
+             {2012 -- 2019}{Bachelor of Mathematics}{Utrecht University}{}{G...
+
+? 
+! Undefined control sequence.
+l.64 \cventry
+             {2016 -- 2017}{Erasmus semester}{Freiburg University, Germany}{...
+
+? 
+! Undefined control sequence.
+l.65 \cventry
+             {2015 -- 2019}{Bachelor Informatics}{Utrecht University}{}{Grad...
+
+? 
+! Undefined control sequence.
+l.66 \cventry
+             {2020 -- \phantom{2020}}{Master Mathematics}{Utrecht University...
+
+? 
+! Undefined control sequence.
+l.68 \section
+             {Projects and awards}
+? 
+! Undefined control sequence.
+l.69 \cventry
+             {2016}{\normalfont Winner of $\mu$KP programming competition}{}...
+
+? 
+! Undefined control sequence.
+l.69 \cventry{2016}{\normalfont
+                                Winner of $\mu$KP programming competition}{}...
+
+? 
+! Undefined control sequence.
+l.70 \cventry
+             {2018}{\normalfont \href{http://mathijshenquet.nl/cv/kieli_soft...
+
+? 
+! Undefined control sequence.
+l.70 \cventry{2018}{\normalfont
+                                \href{http://mathijshenquet.nl/cv/kieli_soft...
+
+? 
+! Undefined control sequence.
+l.70 \cventry{2018}{\normalfont \href
+                                     {http://mathijshenquet.nl/cv/kieli_soft...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.70 ...t \href{http://mathijshenquet.nl/cv/kieli_
+                                                  software_project.pdf}{Soft...
+
+? 
+! Extra }, or forgotten $.
+l.70 ...shenquet.nl/cv/kieli_software_project.pdf}
+                                                  {Software project Speech2E...
+
+? 
+! Undefined control sequence.
+l.70 ...df}{Software project Speech2EPD \textcolor
+                                                  {color2}{\faIcon[regular]{...
+
+? 
+! Undefined control sequence.
+l.70 ...ject Speech2EPD \textcolor{color2}{\faIcon
+                                                  [regular]{file}}}}{}{}{}{T...
+
+? 
+! Extra }, or forgotten $.
+l.70 ...extcolor{color2}{\faIcon[regular]{file}}}}
+                                                  {}{}{}{The goal was a syst...
+
+? 
+! Undefined control sequence.
+l.71 \cventry
+             {2019}{\normalfont \href{http://mathijshenquet.nl/cv/henquet_ho...
+
+? 
+! Undefined control sequence.
+l.71 \cventry{2019}{\normalfont
+                                \href{http://mathijshenquet.nl/cv/henquet_ho...
+
+? 
+! Undefined control sequence.
+l.71 \cventry{2019}{\normalfont \href
+                                     {http://mathijshenquet.nl/cv/henquet_ho...
+
+? 
+! Undefined control sequence.
+l.71 ... Thesis Homotopical mathematics \textcolor
+                                                  {color2}{\faIcon[regular]{...
+
+? 
+! Undefined control sequence.
+l.71 ...cal mathematics \textcolor{color2}{\faIcon
+                                                  [regular]{file}}}}{}{}{Gra...
+
+? 
+! Undefined control sequence.
+l.72 \cventry
+             {2019}{\normalfont Summer fellow at MIRI}{}{}{}{An extended ret...
+
+? 
+! Undefined control sequence.
+l.72 \cventry{2019}{\normalfont
+                                Summer fellow at MIRI}{}{}{}{An extended ret...
+
+? 
+! Undefined control sequence.
+l.73 \cventry
+             {2022--\phantom{0}}{\normalfont Master thesis project}{}{}{}{On...
+
+? 
+! Undefined control sequence.
+l.73 \cventry{2022--\phantom{0}}{\normalfont
+                                             Master thesis project}{}{}{}{On...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.74 
+     
+? 
+
+Overfull \hbox (0.79704pt too wide) in paragraph at lines 68--74
+[]\tenrm Projects and awards 2016Win-ner of $\teni ^^V$\tenrm KP pro-gram-ming 
+com-pe-ti-tionA pro-gram-ming com-pe-ti-tion amongst|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm P
+.\tenrm r
+.\tenrm o
+.\kern0.55554
+.etc.
+
+
+Overfull \hbox (3569.86342pt too wide) in paragraph at lines 68--74
+\tenrm the CS stu-dents at Utrecht Uni-ver-sity. 2018http://mathijshenquet.nl/c
+v/kieli$[]\teni oftware[]roject:pdf[][][][][][][][][][][][][][][][][][][][][][]
+[]$ |
+
+\hbox(7.5+2.86108)x469.75499, glue set - 1.0
+.\tenrm t
+.\tenrm h
+.\tenrm e
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm C
+.etc.
+
+! Undefined control sequence.
+l.75 \section
+             {Experience}
+? 
+! Undefined control sequence.
+l.76 \cventry
+             {2015}{\normalfont Tutor Linear Algebra at Utrecht University}{...
+
+? 
+! Undefined control sequence.
+l.76 \cventry{2015}{\normalfont
+                                Tutor Linear Algebra at Utrecht University}{...
+
+? 
+! Undefined control sequence.
+l.77 \cventry
+             {2020}{\normalfont \href{https://github.com/epidemics/covid}{Vo...
+
+? 
+! Undefined control sequence.
+l.77 \cventry{2020}{\normalfont
+                                \href{https://github.com/epidemics/covid}{Vo...
+
+? 
+! Undefined control sequence.
+l.77 \cventry{2020}{\normalfont \href
+                                     {https://github.com/epidemics/covid}{Vo...
+
+? 
+! Undefined control sequence.
+l.77 ...lunteer at Epidemic Forecasting \textcolor
+                                                  {color2}{\faIcon[regular]{...
+
+? 
+! Undefined control sequence.
+l.77 ...mic Forecasting \textcolor{color2}{\faIcon
+                                                  [regular]{github}}}}{}{}{}...
+
+? 
+
+Overfull \hbox (28.38483pt too wide) in paragraph at lines 75--78
+[]\tenrm Experience 2015Tu-tor Lin-ear Al-ge-bra at Utrecht Uni-ver-sity 2020ht
+tps://github.com/epidemics/covidVolunteer|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\hbox(0.0+0.0)x20.0
+.\tenrm E
+.\tenrm x
+.\tenrm p
+.\kern0.27779
+.etc.
+
+! Undefined control sequence.
+l.79 \section
+             {Language skills}
+? 
+! Undefined control sequence.
+l.80 \begin
+           {minipage}[t]{0.33\textwidth}
+? 
+! Undefined control sequence.
+l.80 \begin{minipage}[t]{0.33\textwidth
+                                       }
+? 
+! Undefined control sequence.
+l.81 \cvitem
+            {Dutch}{C2 - Native}
+? 
+[1{/usr/local/texlive/2023basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] 
+)
+(\end occurred inside a group at level 2)
+
+### simple group (level 2) entered at line 70 ({)
+### simple group (level 1) entered at line 70 ({)
+### bottom level</usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb>
+Output written on cv.pdf (1 page, 58440 bytes).
+PDF statistics:
+ 24 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
