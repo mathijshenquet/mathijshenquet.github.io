@@ -61,11 +61,12 @@ async function toLatex() {
         )
     }
 
+    let _grade = (grade?: string) => grade?.replace(/[\d\.]+/, "$&\\textcolor{gray}{/10}") ?? "";
 
     function cventry(time: string, title: string, employee: string, localization: string, grade?: string, comment?: string) {
         time = time.replace(/ ?- ?/, " -- ").replace("present", "\\phantom{2020}")
         let location = localization ? `${employee}, ${localization}` : employee;
-        latex_cmd("cventry", [], [time, title, location, "", grade ?? "", comment ?? ""])
+        latex_cmd("cventry", [], [time, title, location, "", _grade(grade), comment ?? ""])
 
         html_block(
             ...$('div', `class="entry"`, 
@@ -83,7 +84,7 @@ async function toLatex() {
 
     function simple_entry(time: string, item: string, grade: string = "", comment: string = "") {
         time = time.replace(/ ?- ?/, "--").replace("present", "\\phantom{0}")
-        latex_cmd("cventry", [], [time, `\\normalfont ${item}`, "", "", grade ?? "", comment ?? ""])
+        latex_cmd("cventry", [], [time, `\\normalfont ${item}`, "", "", _grade(grade), comment ?? ""])
 
         html_block(
             ...$('div', `class="entry"`, 
@@ -169,7 +170,7 @@ async function toLatex() {
     section("Education");
     cv.education.reverse().forEach(({ time, item, grade }) => {
         let groups = /(?<title>.*) at (?<inst>.+?)(?:\, (?<loc>.*))?$/s.exec(item)?.groups ?? {};
-        cventry(time, groups.title, groups.inst, groups.loc ?? "", grade ?? "")
+        cventry(time, groups.title, groups.inst, groups.loc ?? "", grade)
     })
 
 
