@@ -27,11 +27,11 @@ p {
     font-size: 20px;
 }
 
-#weeks, #days {
+.weeks, .days {
     font-weight: bold;
 }
 
-#since {
+.since {
     color: #888;
     font-size: 16px;
 }
