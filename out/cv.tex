@@ -1,18 +1,50 @@
-The following is a CV written in latex using the moderncv package. Convert it to a webpage using html and css. 
-Use the fontawesome library for icons and put everything in a max-width .container with a box-shadow.
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
 
-About the cvitem / cventry lines: 
-1. Use css grid layout to create two columns, put the first argument of cvitem / cventry into the first and the rest in the second.
-2. The last argument becomes a p.description in a smaller font.
-3. The other arguments are wrapped in semantic inline element.  
 
-```
-\documentclass{moderncv}        
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+%\usepackage[text={6in,9in},centering]{geometry}
+\usepackage[scale=0.8]{geometry} % Reduce document margins
 
-\moderncvstyle{classic}
-\moderncvcolor{red}
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\definecolor{color1}{rgb}{0.22,0.46,0.34}
+\usepackage[nodayofweek]{datetime}
+\newcommand{\mydate}{\formatdate{4}{1}{2018}} 
+\usepackage[bottom]{footmisc}
 
-\name{Mathijs}{Henquet}
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \moderncvhead{3}
+
+
+% \usepackage[bottom]{footmisc}
+% \moderncvhead{3}
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage[ngerman]{babel}
+% adjust the page margins
+%\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\moderncvcolor{color1}
+% personal data
+
+\name{Mathijs}{Henquet \\ \smallskip \textcolor{gray}{\small Amsterdam, the Netherlands}}
 \phone[mobile]{+31 (0)6 39 56 53 54}
 \email{mathijs.henquet@gmail.com}
 \social[github]{mathijshenquet}
@@ -57,4 +89,3 @@ About the cvitem / cventry lines:
 \end{minipage}
 
 \end{document}
-```

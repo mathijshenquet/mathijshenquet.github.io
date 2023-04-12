@@ -123,13 +123,16 @@ async function toLatex() {
     let html_name = "";
     function name(name: string){
         html_name = name;
-        latex_cmd('name', [], name.split(" "));
+        let [first, second] = name.split(" ");
+
+
+        latex_cmd('name', [], [first, second]);
     }
 
     name(cv.info.name);
 
-    //cv.info.address[2] += " \\medskip"
-    //cmd('address', [], cv.info.address);
+    // cv.info.address[2] += " \\medskip"
+    // latex_cmd('address', [], cv.info.address);
 
     info('phone', "mobile", cv.info.phone);
     info('email', null, cv.info.email);
@@ -200,6 +203,8 @@ async function toLatex() {
     footer()
 
     let out = await fs.open(`out/cv.tex`, "w");
+
+    __dirname
 
     out.write(await fs.readFile(`${__dirname}/preamble.tex`));
     for (let line of latex){
