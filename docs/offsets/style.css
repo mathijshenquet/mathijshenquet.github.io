@@ -1,0 +1,108 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f5f5;
+    color: #555;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+header {
+    width: 100%;
+    background-color: #00ad00;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+}
+
+nav, section {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    margin: 0.4em 0;
+    line-height: 1 nbn;
+}
+
+h2 {
+    color: #00ad00;
+}
+
+main {
+    padding: 20px;
+}
+
+nav, section {
+    clear: both;
+}
+
+section {
+    padding-bottom: 2em;
+}
+
+section img {
+    width: 320px;
+    height: 320px;
+    height: auto;
+}
+
+#intro img, #benefits img {
+    float: left;
+    margin: 0 2em 0 0;
+}
+
+#how-it-works img {
+    float: right;
+    margin: 0 0 0 2em;
+}
+
+button {
+    background-color: #00ad00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #00ad00;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    width: 100%;
+    bottom: 0;
+}
