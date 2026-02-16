@@ -2,19 +2,18 @@
 
 **Software Engineer** · Amsterdam, NL
 
-Software engineer with a CS and mathematics background. At NLR I pitched, built, and drove adoption of two products: SKY (generative AI platform, €800k+/yr productivity gains) and SENTINEL (voice-driven assistant for military situational awareness, adopted by Dutch MOD). MIRI 2019 summer fellow. Based in Amsterdam.
+Engineer with a dual CS/Math background who takes ideas from pitch to production. At NLR, I built and drove adoption of SKY (generative AI platform, €800k+/yr gains) and SENTINEL (military voice assistant, adopted by Dutch MOD). MIRI 2019 Fellow.
 
 ---
 
 ## About
 
-I combine a dual CS and mathematics background — including deep work in homotopy type theory and formal methods — with the drive to turn ideas into systems people actually use.
 
-At NLR I pitched and built SKY, a generative AI platform for classified data that is now used organization-wide, generating €800k+/yr in measured productivity gains. I pitched and led SENTINEL, a voice-driven assistant for military situational awareness that was adopted as a standard capability by the Dutch Ministry of Defence — in a sector where only 4% of innovation projects reach adoption.
+I take ideas from pitch to production — identifying problems, building solutions, and driving them to adoption.
 
-The common thread: I don't just build what's specced. I identify the problem, pitch the solution, build it, and drive it to adoption.
+At Royal NLR, I consistently bridged the gap from research to operational impact — a hurdle few projects clear. I pitched and built SKY, a secure generative AI platform for classified data now used organization-wide, delivering €800k+/yr in measured productivity gains. I then led SENTINEL, a NATO-funded voice assistant for military situational awareness, to adoption as a standard capability by the Dutch Ministry of Defence—a milestone reached by only 4% of defense innovation projects.
 
-My interests in AI safety and research infrastructure go back to my MIRI fellowship in 2019 and continue to shape the problems I choose to work on.
+My work is grounded in a dual background in CS and mathematics, with work in formal methods and homotopy type theory. My engagement with AI safety began as a 2019 MIRI Fellow and remains central to my interests.
 
 ---
 
@@ -43,7 +42,7 @@ Supported Covid-19 scenario modeling for decision makers, focused on the global 
 ## Awards & Fellowships
 
 - **Runner-up NLR Team Innovation Award** (2025) — SKY team, nominated among organization-wide finalists (~1000 FTE company)
-- **Runner-up Best Paper**, Simulation subcommittee, I/ITSEC 2024 — "Mesh-as-a-Service: Automated 3D Modelling fast as l-AI-ghtning"
+- **Runner-up Best Paper**, Simulation subcommittee, I/ITSEC 2024 — for Mesh-as-a-Service
 - **MIRI Summer Fellowship** (2019) — Academic retreat for mathematicians and programmers working on AI alignment
 - **Winner, μKP Programming Competition** (2016) — Best programmer among ~280 second-year CS students, Utrecht University
 
