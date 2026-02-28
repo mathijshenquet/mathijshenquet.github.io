@@ -5,6 +5,8 @@
 
 {{ about.short }}
 
+Alternative versions: [HTML page](https://mathijshenquet.nl/index.html), [abbriged 1-page pdf](https://mathijshenquet.nl/cv/mathijshenquet.pdf)
+
 ---
 
 ## About
@@ -69,7 +71,7 @@
 | Period | Degree | Institution | Notes |
 |--------|--------|-------------|-------|
 {%- for edu in education %}
-| {{ edu.period }} | {{ edu.degree }} | {{ edu.institution }} | {% if edu.note %}{{ edu.note }}{% elif edu.gpa and edu.thesis_grade %}GPA {{ edu.gpa }}, thesis grade {{ edu.thesis_grade }}{% elif edu.gpa %}GPA {{ edu.gpa }}{% else %}{% endif %} |
+| {{ edu.period }} | {{ edu.degree }} | {{ edu.institution }} | {% if edu.note %}{{ edu.note }}{% elif edu.gpa %}{{ edu.gpa }}{% else %}{% endif %} |
 {%- endfor %}
 
 ---

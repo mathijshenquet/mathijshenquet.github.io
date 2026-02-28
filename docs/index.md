@@ -4,6 +4,8 @@
 
 Engineer with a dual CS/Math background who takes ideas from pitch to production. At NLR, I built and drove adoption of SKY (generative AI platform, €800k+/yr gains) and SENTINEL (military voice assistant, adopted by Dutch MOD). MIRI 2019 Fellow.
 
+Alternative versions: [HTML page](https://mathijshenquet.nl/index.html), [abbriged 1-page pdf](https://mathijshenquet.nl/cv/mathijshenquet.pdf)
+
 ---
 
 ## About
@@ -40,7 +42,7 @@ Supported Covid-19 scenario modeling for decision makers, focused on the global 
 
 ## Awards & Fellowships
 - **Runner-up NLR Team Innovation Award** (2025) — SKY team, nominated among organization-wide finalists (among ~1000 employees)
-- **Runner-up Best Paper** (2024) — Simulation subcommittee, I/ITSEC 2024 — for Mesh-as-a-Service
+- **Runner-up Best Paper** (2024) — Simulation subcommittee, I/ITSEC 2024 — for the Mesh-as-a-Service paper
 - **MIRI Summer Fellowship** (2019) — Academic retreat for mathematicians and programmers working on AI alignment
 - **Winner, μKP Programming Competition** (2016) — Best programmer among ~280 second-year CS students, Utrecht University
 
@@ -67,9 +69,9 @@ On homotopy type theory and its relation to higher topos theory. Utrecht Univers
 
 | Period | Degree | Institution | Notes |
 |--------|--------|-------------|-------|
-| 2020–2022 | MSc Mathematics (on hold) | Utrecht University | Thesis on correctness of automatic differentiation |
+| 2020–2022 | MSc Mathematics | Utrecht University | Thesis on correctness of automatic differentiation |
 | 2015–2019 | BSc Computer Science | Utrecht University | GPA 7.8/10 |
-| 2012–2019 | BSc Mathematics | Utrecht University | GPA 7.8/10, thesis grade 9/10 |
+| 2012–2019 | BSc Mathematics | Utrecht University | GPA 7.8/10 |
 | 2016–2017 | Erasmus semester | Freiburg University, Germany |  |
 
 ---

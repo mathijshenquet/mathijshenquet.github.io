@@ -27,12 +27,12 @@ experience:
       - name: SKY
         pdf: true
         description: "Pitched, designed, and built NLR's in-house generative AI platform for sensitive/classified data. Security-compliant, locally hosted. Generates €800k+/yr in measured productivity gains. Proposed spin-off strategy and consortium model for cross-institute adoption."
-        pdf_description: "Built NLR's generative AI platform for classified data. €800k+/yr in measured productivity gains."
+        pdf_description: "Pitched, designed and built NLR's locally hosted generative AI platform for classified data. €800k+/yr in measured productivity gains."
         tech: [.NET C#, gRPC, Python, RAG, TensorRT-LLM, Docker, Rust]
       - name: SENTINEL
         pdf: true
         description: "Pitched, led the project team, and was primary developer of a real-time voice-driven assistant for military situational awareness. Combines speech recognition, speech synthesis, and vision-language models into a responsive system for field operators. Adopted as a standard capability by the Dutch Ministry of Defence — one of only 4% of defense innovation projects to reach adoption."
-        pdf_description: "Led development of real-time voice assistant for military situational awareness. Adopted by Dutch Ministry of Defence."
+        pdf_description: "Led development of real-time voice assistant for military situational awareness. Among 4% of Defence innovation projects adopted as standard capability."
         tech: [Python, Whisper, WebRTC, vLLM, VLM/LLM, "TTS (Kokoro)"]
       - name: Mesh-as-a-Service
         pdf: true
@@ -59,7 +59,7 @@ awards:
     pdf: true
   - title: "Runner-up Best Paper"
     year: 2024
-    detail: "Simulation subcommittee, I/ITSEC 2024 — for Mesh-as-a-Service"
+    detail: "Simulation subcommittee, I/ITSEC 2024 — for the Mesh-as-a-Service paper"
     pdf: true
   - title: MIRI Summer Fellowship
     year: 2019
@@ -81,7 +81,7 @@ projects:
     year: 2019
     grade: "9/10"
     pdf: true
-    link: ./cv/henquet_homotopical_mathematics.pdf
+    link: https://mathijshenquet.nl/cv/henquet_homotopical_mathematics.pdf
     description: "On homotopy type theory and its relation to higher topos theory. Utrecht University."
 
 publications:
@@ -102,7 +102,8 @@ publications:
     pdf: true
 
 education:
-  - degree: MSc Mathematics (on hold)
+  - degree: MSc Mathematics
+    gpa: (on hold)
     institution: Utrecht University
     period: 2020–2022
     note: "Thesis on correctness of automatic differentiation"
@@ -110,13 +111,12 @@ education:
   - degree: BSc Computer Science
     institution: Utrecht University
     period: 2015–2019
-    gpa: "7.8/10"
+    gpa: "GPA 7.8/10"
     pdf: true
   - degree: BSc Mathematics
     institution: Utrecht University
     period: 2012–2019
-    gpa: "7.8/10"
-    thesis_grade: "9/10"
+    gpa: "GPA 7.8/10"
     pdf: true
   - degree: Erasmus semester
     institution: Freiburg University, Germany

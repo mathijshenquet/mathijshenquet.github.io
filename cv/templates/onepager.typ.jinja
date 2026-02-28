@@ -29,8 +29,8 @@
   box(
     clip: true,
     radius: 50%,
-    width: 100pt,
-    height: 100pt,
+    width: 115pt,
+    height: 115pt,
     move(
         dx: 0%,
         dy: 0%,
@@ -38,15 +38,16 @@
     )
   ),
   [
+    #v(22pt)
     #text(22pt, weight: "bold")[{{ name }}]\
-    #v(-4pt)
+    #v(-3pt)
     #text(10pt, fill: muted)[{{ tagline }}]\
     #v(2pt)
     #text(8.5pt, fill: light)[
-      #box(baseline: 1pt, image("icons/email.svg", height: 7.5pt)) #link("mailto:{{ contact.email }}")[{{ contact.email | typ }}] #h(6pt)
-      | #h(6pt) #box(baseline: 1pt, image("icons/github.svg", height: 7.5pt)) #link("{{ contact.github }}")[{{ contact.github_handle }}] #h(6pt)
-      | #h(6pt) #box(baseline: 1pt, image("icons/linkedin.svg", height: 7.5pt)) #link("{{ contact.linkedin }}")[{{ contact.linkedin_handle }}] #h(6pt)
-      | #h(6pt) #box(baseline: 1pt, image("icons/globe.svg", height: 7.5pt)) #link("{{ website }}")[{{ website | replace('https://', '') }}]
+      #box(baseline: 1.33pt, image("icons/email.svg", height: 7.5pt)) #link("mailto:{{ contact.email }}")[{{ contact.email | typ }}] #h(6pt)
+      | #h(6pt) #box(baseline: 1.33pt, image("icons/github.svg", height: 7.5pt)) #link("{{ contact.github }}")[{{ contact.github_handle }}] #h(6pt)
+      | #h(6pt) #box(baseline: 1.33pt, image("icons/linkedin.svg", height: 7.5pt)) #link("{{ contact.linkedin }}")[{{ contact.linkedin_handle }}] #h(6pt)
+      | #h(6pt) #box(baseline: 1.33pt, image("icons/globe.svg", height: 7.5pt)) #link("{{ website }}")[{{ website | replace('https://', '') }}]
     ]
     #v(3pt)
     // About
@@ -119,7 +120,7 @@
 
 #grid(
   columns: (1fr, auto),
-  [*{{ edu.degree | typ }}*{% if edu.gpa %}, GPA {{ edu.gpa }}{% endif %}{% if edu.thesis_grade %}, thesis {{ edu.thesis_grade }}{% endif %} --- {{ edu.institution }}],
+  [*{{ edu.degree | typ }}*{% if edu.gpa %}, {{ edu.gpa }}{% endif %} --- {{ edu.institution }}],
   text(fill: light)[{{ edu.period }}],
 )
 {% endif %}
