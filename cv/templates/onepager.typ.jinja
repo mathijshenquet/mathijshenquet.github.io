@@ -1,0 +1,136 @@
+{#- Typst one-pager CV template -#}
+#set page(margin: (top: 0.4in, bottom: 0.4in, left: 0.55in, right: 0.55in), paper: "a4")
+#set text(font: "Libertinus Serif", size: 9.5pt)
+#set par(leading: 0.5em)
+#set list(indent: 4pt, body-indent: 5pt, spacing: 6pt)
+
+#let accent = rgb("#333333")
+#let muted = rgb("#555555")
+#let light = rgb("#777777")
+#let link-color = rgb("#2255aa")
+
+#let icon-link(url, body) = {
+  link(url)[#text(fill: link-color)[#body #h(1pt) #text(size: 7pt)[#sym.arrow.r.curve]]]
+}
+
+#let section-heading(title) = {
+  v(1.5em)
+  text(10pt, weight: "bold", fill: accent, smallcaps(title))
+  v(-0.5em)
+  line(length: 100%, stroke: 0.5pt + rgb("#cccccc"))
+  v(-0.5em)
+}
+
+// Header
+#grid(
+  columns: (auto, 1fr),
+  column-gutter: 16pt,
+  align: (center, left),
+  box(
+    clip: true,
+    radius: 50%,
+    width: 100pt,
+    height: 100pt,
+    move(
+        dx: 0%,
+        dy: 0%,
+        image("{{ photo_path }}", fit: "cover", width: 125%, height: 125%),
+    )
+  ),
+  [
+    #text(22pt, weight: "bold")[{{ name }}]\
+    #v(-4pt)
+    #text(10pt, fill: muted)[{{ tagline }}]\
+    #v(2pt)
+    #text(8.5pt, fill: light)[
+      #box(baseline: 1pt, image("icons/email.svg", height: 7.5pt)) #link("mailto:{{ contact.email }}")[{{ contact.email | typ }}] #h(6pt)
+      | #h(6pt) #box(baseline: 1pt, image("icons/github.svg", height: 7.5pt)) #link("{{ contact.github }}")[{{ contact.github_handle }}] #h(6pt)
+      | #h(6pt) #box(baseline: 1pt, image("icons/linkedin.svg", height: 7.5pt)) #link("{{ contact.linkedin }}")[{{ contact.linkedin_handle }}] #h(6pt)
+      | #h(6pt) #box(baseline: 1pt, image("icons/globe.svg", height: 7.5pt)) #link("{{ website }}")[{{ website | replace('https://', '') }}]
+    ]
+    #v(3pt)
+    // About
+    #text(size: 9pt, fill: accent)[{{ about.short | typ }}]
+  ],
+)
+
+
+// Experience
+#section-heading("Experience")
+{% for exp in experience %}
+{%- if exp.pdf %}
+
+#grid(
+  columns: (1fr, auto),
+  text(weight: "bold")[{{ exp.role | typ }}],
+  text(fill: light)[{{ exp.period }}],
+)
+#v(-0.5em)
+#text(fill: muted)[{{ exp.org | typ }}{% if exp.location %}, {{ exp.location }}{% endif %}]
+#v(0pt)
+{% if exp.highlights %}
+{%- for item in exp.highlights %}
+{%- if item.pdf %}
+- *{{ item.name }}* --- {{ (item.pdf_description | default(item.description, true)) | typ }}{% if item.tech %} _#text(fill: light)[{{ item.tech | map('typ') | join(', ') }}]_{% endif %}
+#v(-0.3em)
+{% endif %}
+{%- endfor %}
+{%- endif %}
+{% endif %}
+{%- endfor %}
+
+// Awards
+#section-heading("Awards & Fellowships")
+{% for award in awards %}
+{%- if award.pdf %}
+- *{{ award.title | typ }}* ({{ award.year }}) --- {{ award.detail | typ }}
+#v(-0.3em)
+{% endif %}
+{%- endfor %}
+
+// Projects
+#section-heading("Projects")
+{% for project in projects %}
+{%- if project.pdf %}
+
+#grid(
+  columns: (1fr, auto),
+  [*{{ project.title | typ }}*{% if project.link %} #icon-link("{{ project.link }}")[PDF]{% endif %} --- {{ project.type }}{% if project.grade %}, {{ project.grade }}{% endif %}],
+  text(fill: light)[{{ project.year }}],
+)
+#v(-0.5em)
+{{ project.description | typ }}
+{% endif %}
+{%- endfor %}
+
+// Publications
+#section-heading("Publications")
+{% for pub in publications %}
+{%- if pub.pdf %}
+
+{{ pub.authors | map('bold_author') | join(', ') }}{% if not (pub.authors | last).endswith('.') %}.{% endif %} {% if pub.url %}#icon-link("{{ pub.url }}")[{% endif %}"{{ pub.title | typ }}"{% if pub.url %}]{% endif %} _{{ pub.venue }}._ {% if pub.note %}_{{ pub.note | typ }}_{% endif %}
+{% endif %}
+{%- endfor %}
+
+// Education
+#section-heading("Education")
+{% for edu in education %}
+{%- if edu.pdf %}
+
+#grid(
+  columns: (1fr, auto),
+  [*{{ edu.degree | typ }}*{% if edu.gpa %}, GPA {{ edu.gpa }}{% endif %}{% if edu.thesis_grade %}, thesis {{ edu.thesis_grade }}{% endif %} --- {{ edu.institution }}],
+  text(fill: light)[{{ edu.period }}],
+)
+{% endif %}
+{%- endfor %}
+
+// Skills & Languages
+#section-heading("Technical Skills & Languages")
+
+{% for skill in skills %}
+*{{ skill.category }}:* {{ skill.entries | map('typ') | join(', ') }}
+#v(-0.3em)
+{% endfor %}
+#v(0.5em)
+*Languages:* {{ languages | map(attribute='language_level') | join(' · ') }}

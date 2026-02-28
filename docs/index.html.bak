@@ -24,9 +24,9 @@
 
         <section>
             <h2>About</h2>
-<p>I take ideas from pitch to production — identifying problems, building solutions, and driving them to adoption.</p>
-<p>At Royal NLR, I consistently bridged the gap from research to operational impact. I pitched and built SKY, a secure generative AI platform for classified data now used organization-wide, delivering €800k+/yr in measured productivity gains. I then led SENTINEL, a NATO-funded voice assistant for military situational awareness, to adoption as a standard capability by the Dutch Ministry of Defence — a milestone reached by only 4% of defense innovation projects.</p>
-<p>My work is grounded in a dual background in CS and mathematics, with work in formal methods and homotopy type theory. My engagement with AI safety began as a 2019 <a href="https://intelligence.org">MIRI</a> Fellow and remains central to my interests.</p>
+            <p>I take ideas from pitch to production — identifying problems, building solutions, and driving them to adoption.</p>
+            <p>At Royal NLR, I consistently bridged the gap from research to operational impact. I pitched and built SKY, a secure generative AI platform for classified data now used organization-wide, delivering €800k+/yr in measured productivity gains. I then led SENTINEL, a NATO-funded voice assistant for military situational awareness, to adoption as a standard capability by the Dutch Ministry of Defence — a milestone reached by only 4% of defense innovation projects.</p>
+            <p>My work is grounded in a dual background in CS and mathematics, with work in formal methods and homotopy type theory. My engagement with AI safety began as a 2019 <a href="https://intelligence.org">MIRI</a> Fellow and remains central to my interests.</p>
         </section>
 
         <section>
@@ -39,15 +39,14 @@
                 <p class="experience-description">Drove innovation from concept to production. Combining technology scouting, strategic proposal writing, project leadership, and hands-on development.</p>
                 <ul>
                     <li><strong>SKY</strong> — Pitched, designed, and built NLR's in-house generative AI platform for sensitive/classified data. Security-compliant, locally hosted. Generates €800k+/yr in measured productivity gains. Proposed spin-off strategy and consortium model for cross-institute adoption.
-<div class="tech">.NET C#, gRPC, Python, RAG, TensorRT-LLM, Docker, Rust</div>                    </li>
+                        <div class="tech">.NET C#, gRPC, Python, RAG, TensorRT-LLM, Docker, Rust</div>
+                    </li>
                     <li><strong>SENTINEL</strong> — Pitched, led the project team, and was primary developer of a real-time voice-driven assistant for military situational awareness. Combines speech recognition, speech synthesis, and vision-language models into a responsive system for field operators. Adopted as a standard capability by the Dutch Ministry of Defence — one of only 4% of defense innovation projects to reach adoption.
-<div class="tech">Python, Whisper, WebRTC, vLLM, VLM/LLM, TTS (Kokoro)</div>                    </li>
-                    <li><strong>Mesh-as-a-Service</strong> — Developed automated 3D modeling concept using neural reconstruction. First-author paper was runner-up for Best Paper at I/ITSEC 2024 (Simulation subcommittee).
+                        <div class="tech">Python, Whisper, WebRTC, vLLM, VLM/LLM, TTS (Kokoro)</div>
                     </li>
-                    <li><strong>Flight Debrief Study</strong> — Led strategic study on automated flight debriefing summarization. Published at ICCAS 2024.
-                    </li>
-                    <li>Supervised two Master's students on 3D reconstruction and drone path planning.
-                    </li>
+                    <li><strong>Mesh-as-a-Service</strong> — Developed automated 3D modeling concept using neural reconstruction. First-author paper was runner-up for Best Paper at I/ITSEC 2024 (Simulation subcommittee).</li>
+                    <li><strong>Flight Debrief Study</strong> — Led strategic study on automated flight debriefing summarization. Published at ICCAS 2024.</li>
+                    <li>Supervised two Master's students on 3D reconstruction and drone path planning.</li>
                 </ul>
             </div>
             <div class="experience-item">
@@ -63,7 +62,7 @@
             <h2>Awards & Fellowships</h2>
             <ul class="awards-list">
                 <li><strong>Runner-up NLR Team Innovation Award</strong> (2025) — SKY team, nominated among organization-wide finalists (among ~1000 employees)</li>
-                <li><strong>Runner-up Best Paper</strong> (2024) — Simulation subcommittee, I/ITSEC 2024 — for Mesh-as-a-Service</li>
+                <li><strong>Runner-up Best Paper</strong>, Simulation subcommittee, I/ITSEC 2024 — for <a href="#publications">Mesh-as-a-Service</a></li>
                 <li><strong>MIRI Summer Fellowship</strong> (2019) — Academic retreat for mathematicians and programmers working on AI alignment</li>
                 <li><strong>Winner, μKP Programming Competition</strong> (2016) — Best programmer among ~280 second-year CS students, Utrecht University</li>
             </ul>
@@ -90,13 +89,13 @@
         <section id="publications">
             <h2>Publications</h2>
             <div class="publication-item">
-<p><strong>Henquet</strong>, Bellucci, Amghane, et al. <a href="https://iitsec.xcdacademy.com/index.cfm/item/39283">"Mesh-as-a-Service: Automated 3D Modelling fast as l-AI-ghtning."</a> <span class="publication-venue">I/ITSEC 2024.</span> <span class="publication-note">Runner-up Best Paper, Simulation subcommittee.</span></p>
+                <p><strong>Henquet</strong>, Bellucci, Amghane, et al. <a href="https://iitsec.xcdacademy.com/index.cfm/item/39283">"Mesh-as-a-Service: Automated 3D Modelling fast as l-AI-ghtning."</a> <span class="publication-venue">I/ITSEC 2024.</span> <span class="publication-note">Runner-up Best Paper, Simulation subcommittee.</span></p>
             </div>
             <div class="publication-item">
-<p><strong>Henquet</strong>, Bellucci. <a href="https://www.scitepress.org/Papers/2024/129702/129702.pdf">"AI-Assisted Debrief: Automated Flight Debriefing Summarization and Competency Assessment."</a> <span class="publication-venue">ICCAS 2024.</span></p>
+                <p><strong>Henquet</strong>, Bellucci. <a href="https://www.scitepress.org/Papers/2024/129702/129702.pdf">"AI-Assisted Debrief: Automated Flight Debriefing Summarization and Competency Assessment."</a> <span class="publication-venue">ICCAS 2024.</span></p>
             </div>
             <div class="publication-item">
-<p>Hellinga, <strong>Henquet</strong>, Bellucci. "SENTINEL: Supporting Military Situation Understanding Through Conversational Vision-Language AI." <span class="publication-venue">ICMCIS 2026 (accepted for publication).</span></p>
+                <p>Hellinga, <strong>Henquet</strong>, Bellucci. "SENTINEL: Supporting Military Situation Understanding Through Conversational Vision-Language AI." <span class="publication-venue">Submitted.</span></p>
             </div>
         </section>
 

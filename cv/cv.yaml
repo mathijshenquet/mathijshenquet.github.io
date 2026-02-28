@@ -1,0 +1,152 @@
+name: Mathijs Henquet
+surname: Henquet
+tagline: Software Engineer · Amsterdam, NL
+website: https://mathijshenquet.nl
+photo: photo.jpeg
+meta:
+  description: "Software engineer building systems from concept to adoption. Ex-NLR Defense AI team. Based in Amsterdam."
+
+about:
+  full: |
+    I take ideas from pitch to production — identifying problems, building solutions, and driving them to adoption.
+
+    At Royal NLR, I consistently bridged the gap from research to operational impact. I pitched and built SKY, a secure generative AI platform for classified data now used organization-wide, delivering €800k+/yr in measured productivity gains. I then led SENTINEL, a NATO-funded voice assistant for military situational awareness, to adoption as a standard capability by the Dutch Ministry of Defence — a milestone reached by only 4% of defense innovation projects.
+
+    My work is grounded in a dual background in CS and mathematics, with work in formal methods and homotopy type theory. My engagement with AI safety began as a 2019 MIRI Fellow and remains central to my interests.
+  short: "Engineer with a dual CS/Math background who takes ideas from pitch to production. At NLR, I built and drove adoption of SKY (generative AI platform, €800k+/yr gains) and SENTINEL (military voice assistant, adopted by Dutch MOD). MIRI 2019 Fellow."
+  miri_url: https://intelligence.org
+
+experience:
+  - org: NLR — Royal Netherlands Aerospace Centre
+    role: R&D Engineer, AI team
+    period: 2023–2026
+    location: Amsterdam
+    pdf: true
+    description: "Drove innovation from concept to production. Combining technology scouting, strategic proposal writing, project leadership, and hands-on development."
+    highlights:
+      - name: SKY
+        pdf: true
+        description: "Pitched, designed, and built NLR's in-house generative AI platform for sensitive/classified data. Security-compliant, locally hosted. Generates €800k+/yr in measured productivity gains. Proposed spin-off strategy and consortium model for cross-institute adoption."
+        pdf_description: "Built NLR's generative AI platform for classified data. €800k+/yr in measured productivity gains."
+        tech: [.NET C#, gRPC, Python, RAG, TensorRT-LLM, Docker, Rust]
+      - name: SENTINEL
+        pdf: true
+        description: "Pitched, led the project team, and was primary developer of a real-time voice-driven assistant for military situational awareness. Combines speech recognition, speech synthesis, and vision-language models into a responsive system for field operators. Adopted as a standard capability by the Dutch Ministry of Defence — one of only 4% of defense innovation projects to reach adoption."
+        pdf_description: "Led development of real-time voice assistant for military situational awareness. Adopted by Dutch Ministry of Defence."
+        tech: [Python, Whisper, WebRTC, vLLM, VLM/LLM, "TTS (Kokoro)"]
+      - name: Mesh-as-a-Service
+        pdf: true
+        description: "Developed automated 3D modeling concept using neural reconstruction. First-author paper was runner-up for Best Paper at I/ITSEC 2024 (Simulation subcommittee)."
+        pdf_description: "Automated 3D modeling via neural reconstruction. Runner-up Best Paper at I/ITSEC 2024."
+      - name: Flight Debrief Study
+        pdf: true
+        description: "Led strategic study on automated flight debriefing summarization. Published at ICCAS 2024."
+        pdf_description: "Led strategic study on automated flight debriefing summarization. Published at ICCAS 2024."
+      - name:
+        pdf: false
+        description: "Supervised two Master's students on 3D reconstruction and drone path planning."
+
+  - org: Epidemic Forecasting (Volunteer)
+    role: Frontend Developer
+    period: "2020"
+    pdf: false
+    description: "Supported Covid-19 scenario modeling for decision makers, focused on the global south. Built model visualization in the frontend."
+
+awards:
+  - title: Runner-up NLR Team Innovation Award
+    year: 2025
+    detail: "SKY team, nominated among organization-wide finalists (among ~1000 employees)"
+    pdf: true
+  - title: "Runner-up Best Paper"
+    year: 2024
+    detail: "Simulation subcommittee, I/ITSEC 2024 — for Mesh-as-a-Service"
+    pdf: true
+  - title: MIRI Summer Fellowship
+    year: 2019
+    detail: "Academic retreat for mathematicians and programmers working on AI alignment"
+    pdf: true
+  - title: "Winner, μKP Programming Competition"
+    year: 2016
+    detail: "Best programmer among ~280 second-year CS students, Utrecht University"
+    pdf: false
+
+projects:
+  - title: Correctness of Automatic Differentiation
+    type: "Master's thesis (on hold)"
+    year: 2022
+    pdf: true
+    description: "Formal proof of correctness of automatic differentiation in the presence of recursion and iteration. Utrecht University, Mathematics."
+  - title: Homotopical Mathematics
+    type: "Bachelor's thesis"
+    year: 2019
+    grade: "9/10"
+    pdf: true
+    link: ./cv/henquet_homotopical_mathematics.pdf
+    description: "On homotopy type theory and its relation to higher topos theory. Utrecht University."
+
+publications:
+  - authors: [Henquet, Bellucci, Amghane, et al.]
+    title: "Mesh-as-a-Service: Automated 3D Modelling fast as l-AI-ghtning."
+    url: https://iitsec.xcdacademy.com/index.cfm/item/39283
+    venue: I/ITSEC 2024
+    note: "Runner-up Best Paper, Simulation subcommittee."
+    pdf: true
+  - authors: [Henquet, Bellucci]
+    title: "AI-Assisted Debrief: Automated Flight Debriefing Summarization and Competency Assessment."
+    url: https://www.scitepress.org/Papers/2024/129702/129702.pdf
+    venue: ICCAS 2024
+    pdf: true
+  - authors: [Hellinga, Henquet, Bellucci]
+    title: "SENTINEL: Supporting Military Situation Understanding Through Conversational Vision-Language AI."
+    venue: ICMCIS 2026 (accepted for publication)
+    pdf: true
+
+education:
+  - degree: MSc Mathematics (on hold)
+    institution: Utrecht University
+    period: 2020–2022
+    note: "Thesis on correctness of automatic differentiation"
+    pdf: true
+  - degree: BSc Computer Science
+    institution: Utrecht University
+    period: 2015–2019
+    gpa: "7.8/10"
+    pdf: true
+  - degree: BSc Mathematics
+    institution: Utrecht University
+    period: 2012–2019
+    gpa: "7.8/10"
+    thesis_grade: "9/10"
+    pdf: true
+  - degree: Erasmus semester
+    institution: Freiburg University, Germany
+    period: 2016–2017
+    pdf: false
+
+skills:
+  - category: Languages
+    entries: [Rust, TypeScript/JavaScript, Python, "C# (.NET)", Haskell, SQL]
+  - category: Web
+    entries: [React, Node.js, HTML/CSS, Vite]
+  - category: AI/ML
+    entries: [LLM/VLM integration, RAG pipelines, "latency optimization (TTS/STT/embedding models)"]
+  - category: Infrastructure
+    entries: [Docker, Linux, PostgreSQL, MongoDB, Redis]
+  - category: Other
+    entries: [Security-compliant deployment, classified data handling, LaTeX, Mathematica]
+
+languages:
+  - language: Dutch
+    level: native
+  - language: English
+    level: C2
+  - language: German
+    level: C1
+
+contact:
+  location: Amsterdam, the Netherlands
+  github: https://github.com/mathijshenquet
+  github_handle: mathijshenquet
+  linkedin: https://linkedin.com/in/mathijshenquet
+  linkedin_handle: mathijshenquet
+  email: mathijs.henquet@gmail.com

@@ -1,0 +1,97 @@
+{#- -#}
+# {{ name }}
+
+**{{ tagline }}**
+
+{{ about.short }}
+
+---
+
+## About
+
+{%- for para in about.full.strip().split('\n\n') %}
+
+{{ para }}
+{%- endfor %}
+
+---
+
+## Experience
+{%- for exp in experience %}
+
+### {{ exp.org }}
+**{{ exp.role }}** · {{ exp.period }}{% if exp.location %} · {{ exp.location }}{% endif %}
+
+{{ exp.description }}
+{%- if exp.highlights %}
+{% for item in exp.highlights %}
+{%- if item.name %}
+- **{{ item.name }}** — {{ item.description }}
+{%- if item.tech %}
+  *Tech: {{ item.tech | join(', ') }}*
+{%- endif %}
+{%- else %}
+- {{ item.description }}
+{%- endif %}
+{%- endfor %}
+{%- endif %}
+{%- endfor %}
+
+---
+
+## Awards & Fellowships
+
+{%- for award in awards %}
+- **{{ award.title }}** ({{ award.year }}) — {{ award.detail }}
+{%- endfor %}
+
+---
+
+## Projects
+{%- for project in projects %}
+
+### {{ project.type }} — {{ project.title }} ({% if 'on hold' in (project.type | default('', true)) %}on hold, {% endif %}{{ project.year }}{% if project.grade %}, grade: {{ project.grade }}{% endif %})
+{{ project.description }}
+{%- endfor %}
+
+---
+
+## Publications
+
+{%- for pub in publications %}
+{{ loop.index }}. {{ pub.authors | map('bold_author') | join(', ') }}{% if not (pub.authors | last).endswith('.') %}.{% endif %} {% if pub.url %}["{{ pub.title }}"]({{ pub.url }}){% else %}"{{ pub.title }}"{% endif %} *{{ pub.venue }}.* {% if pub.note %}{{ pub.note }}{% endif %}
+{%- endfor %}
+
+---
+
+## Education
+
+| Period | Degree | Institution | Notes |
+|--------|--------|-------------|-------|
+{%- for edu in education %}
+| {{ edu.period }} | {{ edu.degree }} | {{ edu.institution }} | {% if edu.note %}{{ edu.note }}{% elif edu.gpa and edu.thesis_grade %}GPA {{ edu.gpa }}, thesis grade {{ edu.thesis_grade }}{% elif edu.gpa %}GPA {{ edu.gpa }}{% else %}{% endif %} |
+{%- endfor %}
+
+---
+
+## Technical Skills
+
+{%- for skill in skills %}
+**{{ skill.category }}:** {{ skill.entries | join(', ') }}
+{%- endfor %}
+
+---
+
+## Languages
+
+{% for lang in languages %}{{ lang.language }} ({{ lang.level }}){% if not loop.last %} · {% endif %}{% endfor %}
+
+---
+
+## Contact
+
+Based in {{ contact.location }}.
+
+- GitHub: [github.com/{{ contact.github_handle }}]({{ contact.github }})
+- LinkedIn: [linkedin.com/in/{{ contact.linkedin_handle }}]({{ contact.linkedin }})
+- Email: {first-name}.{last-name}@gmail.com
