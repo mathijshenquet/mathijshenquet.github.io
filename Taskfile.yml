@@ -1,0 +1,8 @@
+version: "3"
+
+tasks:
+  cv:
+    desc: Build CV outputs (md, html, pdf)
+    dir: cv
+    cmds:
+      - uv run python build.py
