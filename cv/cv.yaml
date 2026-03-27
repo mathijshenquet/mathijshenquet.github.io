@@ -96,10 +96,10 @@ publications:
     url: https://www.scitepress.org/Papers/2024/129702/129702.pdf
     venue: ICCAS 2024
     pdf: true
-  - authors: [Hellinga, Henquet, Bellucci]
-    title: "SENTINEL: Supporting Military Situation Understanding Through Conversational Vision-Language AI."
-    venue: ICMCIS 2026 (accepted for publication)
-    pdf: true
+  # - authors: [Hellinga, Henquet, Bellucci]
+  #   title: "SENTINEL: Supporting Military Situation Understanding Through Conversational Vision-Language AI."
+  #   venue: ICMCIS 2026 (accepted for publication)
+  #   pdf: true
 
 education:
   - degree: MSc Mathematics

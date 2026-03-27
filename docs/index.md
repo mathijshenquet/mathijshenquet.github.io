@@ -61,7 +61,6 @@ On homotopy type theory and its relation to higher topos theory. Utrecht Univers
 ## Publications
 1. **Henquet**, Bellucci, Amghane, et al. ["Mesh-as-a-Service: Automated 3D Modelling fast as l-AI-ghtning."](https://iitsec.xcdacademy.com/index.cfm/item/39283) *I/ITSEC 2024.* Runner-up Best Paper, Simulation subcommittee.
 2. **Henquet**, Bellucci. ["AI-Assisted Debrief: Automated Flight Debriefing Summarization and Competency Assessment."](https://www.scitepress.org/Papers/2024/129702/129702.pdf) *ICCAS 2024.* 
-3. Hellinga, **Henquet**, Bellucci. "SENTINEL: Supporting Military Situation Understanding Through Conversational Vision-Language AI." *ICMCIS 2026 (accepted for publication).* 
 
 ---
 

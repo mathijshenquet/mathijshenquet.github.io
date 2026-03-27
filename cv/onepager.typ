@@ -127,9 +127,6 @@ On homotopy type theory and its relation to higher topos theory. Utrecht Univers
 *Henquet*, Bellucci. #icon-link("https://www.scitepress.org/Papers/2024/129702/129702.pdf")["AI-Assisted Debrief: Automated Flight Debriefing Summarization and Competency Assessment."] _ICCAS 2024._ 
 
 
-Hellinga, *Henquet*, Bellucci. "SENTINEL: Supporting Military Situation Understanding Through Conversational Vision-Language AI." _ICMCIS 2026 (accepted for publication)._ 
-
-
 // Education
 #section-heading("Education")
 
