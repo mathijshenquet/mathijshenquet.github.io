@@ -50,7 +50,7 @@
     ]
     #v(3pt)
     // About
-    #text(size: 9pt, fill: accent)[Engineer with a dual CS/Math background who takes ideas from pitch to production. At NLR, I built and drove adoption of SKY (generative AI platform, €800k+/yr gains) and SENTINEL (military voice assistant, adopted by Dutch MOD). MIRI 2019 Fellow.]
+    #text(size: 9pt, fill: accent)[Engineer with a dual CS/Math background who takes ideas from pitch to production. At NLR, I built and drove adoption of SKY (generative AI platform, €800k+/yr gains). MIRI 2019 Fellow.]
   ],
 )
 
@@ -69,9 +69,6 @@
 #v(0pt)
 
 - *SKY* --- Pitched, designed and built NLR's locally hosted generative AI platform for classified data. €800k+/yr in measured productivity gains. _#text(fill: light)[.NET C\#, gRPC, Python, RAG, TensorRT-LLM, Docker, Rust]_
-#v(-0.3em)
-
-- *SENTINEL* --- Led development of real-time voice assistant for military situational awareness. Among 4% of Defence innovation projects adopted as standard capability. _#text(fill: light)[Python, Whisper, WebRTC, vLLM, VLM/LLM, TTS (Kokoro)]_
 #v(-0.3em)
 
 - *Mesh-as-a-Service* --- Automated 3D modeling via neural reconstruction. Runner-up Best Paper at I/ITSEC 2024.

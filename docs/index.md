@@ -2,7 +2,7 @@
 
 **Software Engineer · Amsterdam, NL**
 
-Engineer with a dual CS/Math background who takes ideas from pitch to production. At NLR, I built and drove adoption of SKY (generative AI platform, €800k+/yr gains) and SENTINEL (military voice assistant, adopted by Dutch MOD). MIRI 2019 Fellow.
+Engineer with a dual CS/Math background who takes ideas from pitch to production. At NLR, I built and drove adoption of SKY (generative AI platform, €800k+/yr gains). MIRI 2019 Fellow.
 
 Alternative versions: [HTML page](https://mathijshenquet.nl/index.html), [abbriged 1-page pdf](https://mathijshenquet.nl/cv/mathijshenquet.pdf)
 
@@ -12,7 +12,7 @@ Alternative versions: [HTML page](https://mathijshenquet.nl/index.html), [abbrig
 
 I take ideas from pitch to production — identifying problems, building solutions, and driving them to adoption.
 
-At Royal NLR, I consistently bridged the gap from research to operational impact. I pitched and built SKY, a secure generative AI platform for classified data now used organization-wide, delivering €800k+/yr in measured productivity gains. I then led SENTINEL, a NATO-funded voice assistant for military situational awareness, to adoption as a standard capability by the Dutch Ministry of Defence — a milestone reached by only 4% of defense innovation projects.
+At Royal NLR, I consistently bridged the gap from research to operational impact. I pitched and built SKY, a secure generative AI platform for classified data now used organization-wide, delivering €800k+/yr in measured productivity gains.
 
 My work is grounded in a dual background in CS and mathematics, with work in formal methods and homotopy type theory. My engagement with AI safety began as a 2019 MIRI Fellow and remains central to my interests.
 
@@ -27,8 +27,6 @@ Drove innovation from concept to production. Combining technology scouting, stra
 
 - **SKY** — Pitched, designed, and built NLR's in-house generative AI platform for sensitive/classified data. Security-compliant, locally hosted. Generates €800k+/yr in measured productivity gains. Proposed spin-off strategy and consortium model for cross-institute adoption.
   *Tech: .NET C#, gRPC, Python, RAG, TensorRT-LLM, Docker, Rust*
-- **SENTINEL** — Pitched, led the project team, and was primary developer of a real-time voice-driven assistant for military situational awareness. Combines speech recognition, speech synthesis, and vision-language models into a responsive system for field operators. Adopted as a standard capability by the Dutch Ministry of Defence — one of only 4% of defense innovation projects to reach adoption.
-  *Tech: Python, Whisper, WebRTC, vLLM, VLM/LLM, TTS (Kokoro)*
 - **Mesh-as-a-Service** — Developed automated 3D modeling concept using neural reconstruction. First-author paper was runner-up for Best Paper at I/ITSEC 2024 (Simulation subcommittee).
 - **Flight Debrief Study** — Led strategic study on automated flight debriefing summarization. Published at ICCAS 2024.
 - Supervised two Master's students on 3D reconstruction and drone path planning.
